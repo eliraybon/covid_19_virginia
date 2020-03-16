@@ -1,0 +1,47 @@
+body {
+  font-family: $main;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  font-family: $header;
+  color: $highlight;
+  font-size: 5vw;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $highlight;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  width: 20%;
+  font-size: 30px;
+  font-size: 2.5vw;
+}
+// .last-updated {
+//   position: fixed;
+//   bottom: 2px;
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+// }
+
+.last-updated {
+  position: fixed;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}

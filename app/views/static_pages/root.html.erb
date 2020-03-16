@@ -1,12 +1,29 @@
-<h1>COVID-19: Virginia</h1>
+<h1>COVID-19 in Virginia</h1>
 
 <ul>
-  <li>Infected: <%= @data.infected %></li>
-  <li>Dead: <%= @data.dead %></li>
-  <li>Currently Sick: <%= @data.sick %></li>
-  <li>Recovered: <%= @data.recovered %></li>
+  <li>
+    <p>Infected:</p>
+    <p><%= @data.infected %></p>
+  </li>
+
+    <li>
+    <p>Dead:</p>
+    <p><%= @data.dead %></p>
+  </li>
+
+    <li>
+    <p>Still Sick:</p>
+    <p><%= @data.sick %></p>
+  </li>
+
+    <li>
+    <p>Recovered:</p>
+    <p><%= @data.recovered %></p>
+  </li>
 </ul>
 
 <% minutes = ((Time.now - @data.updated_at).round.to_i / 60) %>
 <% elapsed_time = minutes < 60 ? "#{minutes} minutes" : "#{minutes / 60} hours" %>
-<p>Last updated <%= elapsed_time %> ago</p>
+<% elapsed_time = "1 hour" if elapsed_time == "1 hours" %>
+
+<p class="last-updated">Last updated <%= elapsed_time %> ago</p>
