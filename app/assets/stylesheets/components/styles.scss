@@ -6,9 +6,10 @@ body {
   font-family: $main;
   height: 100%;
   background-color: whitesmoke;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -50,10 +51,25 @@ li {
   font-size: 1.5vw;
 }
 
+.page-links {
+  display: flex;
+}
+
+.page-link {
+  font-size: 2vw;
+  margin: 0px 2vw;
+  color: $highlight;
+}
+
 @media only screen and (max-width: 1024px) {
+  body {
+    display: block;
+  }
+
+
   h1 {
     font-size: 40px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   .last-updated {
@@ -85,8 +101,16 @@ li {
   .last-updated {
     display: none;
   }
+}
 
-  // body {
-  //   display: block;
-  // }
+@media only screen and (max-width: 520px) {
+  .page-links {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-link {
+    font-size: 15px;
+  }
 }

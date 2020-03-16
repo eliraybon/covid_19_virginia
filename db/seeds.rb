@@ -9,3 +9,5 @@
 Location.create(name: 'Virginia')
 Location.create(name: 'North Carolina')
 Location.create(name: 'Mississippi')
+Location.create(name: 'South Carolina')
+Location.create(name: 'Louisiana')
