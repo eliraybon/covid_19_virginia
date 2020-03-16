@@ -42,14 +42,34 @@ li {
   font-size: 1.5vw;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   h1 {
     font-size: 50px;
+    padding-top: 30px;
   }
 
   .last-updated {
     font-size: 14px;
   }
+}
 
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
 
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    width: 100%;
+  }
+
+  li {
+    width: 80%;
+    min-height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
