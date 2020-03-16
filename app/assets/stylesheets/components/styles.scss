@@ -1,6 +1,14 @@
+html {
+  height: 100%;;
+}
+
 body {
   font-family: $main;
+  height: 100%;
   background-color: whitesmoke;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
 }
 
 h1 {
@@ -44,7 +52,7 @@ li {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 30px;
   }
 
@@ -71,9 +79,14 @@ li {
     min-height: 100px;
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 25px;
   }
 
   .last-updated {
     display: none;
   }
+
+  // body {
+  //   display: block;
+  // }
 }
