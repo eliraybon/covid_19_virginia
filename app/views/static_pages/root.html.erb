@@ -7,3 +7,6 @@
   <li>Recovered: <%= @data.recovered %></li>
 </ul>
 
+<% minutes = ((Time.now - @data.updated_at).round.to_i / 60) %>
+<% elapsed_time = minutes < 60 ? "#{minutes} minutes" : "#{minutes / 60} hours" %>
+<p>Last updated <%= elapsed_time %> ago</p>
