@@ -1,5 +1,5 @@
 html {
-  height: 100%;;
+  height: 100%;
 }
 
 body {
@@ -112,5 +112,10 @@ li {
 
   .page-link {
     font-size: 15px;
+    margin-top: 8px;
+  }
+
+  html { 
+    padding-bottom: 50px;
   }
 }
